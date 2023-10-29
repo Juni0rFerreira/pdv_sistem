@@ -16,24 +16,24 @@ class EstoquePage extends GetView<EstoqueController> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Adicionar Produto'),
+          title: const Text('Adicionar Produto'),
           content: Column(
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(labelText: 'Nome'),
+                decoration: const InputDecoration(labelText: 'Nome'),
                 onChanged: (value) {
                   nome = value;
                 },
               ),
               TextField(
-                decoration: InputDecoration(labelText: 'Preço'),
+                decoration: const InputDecoration(labelText: 'Preço'),
                 keyboardType: TextInputType.number,
                 onChanged: (value) {
                   preco = double.tryParse(value) ?? 0.0;
                 },
               ),
               TextField(
-                decoration: InputDecoration(labelText: 'Quantidade'),
+                decoration: const InputDecoration(labelText: 'Quantidade'),
                 keyboardType: TextInputType.number,
                 onChanged: (value) {
                   quantidade = int.tryParse(value) ?? 0;
@@ -46,7 +46,7 @@ class EstoquePage extends GetView<EstoqueController> {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: Text('Cancelar'),
+              child: const Text('Cancelar'),
             ),
             TextButton(
               onPressed: () {
@@ -63,7 +63,7 @@ class EstoquePage extends GetView<EstoqueController> {
                   );
                 }
               },
-              child: Text('Adicionar'),
+              child: const Text('Adicionar'),
             ),
           ],
         );
@@ -87,7 +87,7 @@ class EstoquePage extends GetView<EstoqueController> {
         onPressed: () {
           _exibirDialogoAdicionarProduto(context);
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }
