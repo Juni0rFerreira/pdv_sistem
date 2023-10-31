@@ -105,73 +105,64 @@ _body() {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: SizedBox(
-                                        height: 50.0,
-                                        width: 150.0,
-                                        child: TextButton(
-                                          child: const Row(
-                                            children: [
-                                              Icon(
-                                                Icons.add_circle_outline,
-                                                color: Colors.green,
-                                              ),
-                                              Text("Adicionar")
-                                            ],
-                                          ),
-                                          onPressed: () {},
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        child: const Row(
+                                          children: [
+                                            Icon(Icons.add),
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: Text("Adicionar",
+                                                  style: TextStyle(fontSize: 20)),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: SizedBox(
-                                              height: 50.0,
-                                              width: 150.0,
-                                              child: TextButton(
-                                                child: const Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons
-                                                          .check_circle_outline,
-                                                      color: Colors.green,
-                                                    ),
-                                                    Text("Finalizar")
-                                                  ],
-                                                ),
-                                                onPressed: () {},
-                                              ),
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Colors.green),
+                                        ),
+                                        child: const Row(
+                                          children: [
+                                            Icon(Icons.verified),
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: Text("Finalizar",
+                                                  style: TextStyle(fontSize: 20)),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: SizedBox(
-                                              height: 50.0,
-                                              width: 150.0,
-                                              child: TextButton(
-                                                child: const Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.highlight_off,
-                                                      color: Colors.red,
-                                                    ),
-                                                    Text("Cancelar")
-                                                  ],
-                                                ),
-                                                onPressed: () {},
-                                              ),
-                                            ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ],
-                                ),
-                              ),
-                            ],
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Colors.red),
+                                        ),
+                                        child: const Row(
+                                          children: [
+                                            Icon(Icons.close),
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: Text("Cancelar",
+                                                  style: TextStyle(fontSize: 20)),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                       
+                                  ],),),]
                           ),
                         ),
                       ),

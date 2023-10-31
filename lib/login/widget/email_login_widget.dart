@@ -9,7 +9,7 @@ class InputEmail extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller.emailInput,
-      decoration: const InputDecoration(hintText: "E-mail"),
+      decoration: const InputDecoration(hintText: "E-mail", border: OutlineInputBorder()), 
     );
   }
 }

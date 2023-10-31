@@ -9,7 +9,7 @@ class InputPassword extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller.passwordInput,
-      decoration: const InputDecoration(hintText: "Senha"),
+      decoration: const InputDecoration(hintText: "Senha", border: OutlineInputBorder()),
     );
   }
 }

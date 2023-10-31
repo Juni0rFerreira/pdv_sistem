@@ -7,11 +7,15 @@ class LoginButton extends GetView<LoginController> {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        controller.tryTologin();
-      },
-      child: const Text("Entrar"),
+    return SizedBox(width: 20, height: 40,
+      child: ElevatedButton(
+        
+        onPressed: () {
+          controller.tryTologin();
+        },
+        child: const Text("Entrar"),
+        
+      ),
     );
   }
 }
