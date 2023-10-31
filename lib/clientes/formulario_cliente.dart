@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pdv_sistem/clientes/cadastrar_clientes_controller.dart';
+import 'package:pdv_sistem/clientes/formulario_controller.dart';
 import 'package:pdv_sistem/clientes/clientes.dart';
 import 'package:pdv_sistem/componentes/navigator_drawer.dart';
 
-class CadastrarClientes extends GetView<CadastrarController> {
-  const CadastrarClientes({super.key});
+class FormularioClientes extends GetView<FormularioController> {
+  const FormularioClientes({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Center(child: Text("Cadastrar Clientes")),
+        title: const Center(child: Text("Formulário do Cliente")),
         actions: [
           IconButton(
             onPressed: () {

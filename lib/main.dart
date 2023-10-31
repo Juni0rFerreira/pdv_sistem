@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pdv_sistem/login/login.dart';
+import 'package:pdv_sistem/clientes/clientes.dart';
 import 'package:pdv_sistem/login/login_binding.dart';
 
 void main() {
@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key}); 
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const ClientesPage(),
     );
   }
 }
