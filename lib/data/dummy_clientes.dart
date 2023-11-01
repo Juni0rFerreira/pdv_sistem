@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:pdv_sistem/models/clientes_cadastrados.dart';
 
 const DUMMY_CLIENTES = {
